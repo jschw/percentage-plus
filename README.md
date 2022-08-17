@@ -2,11 +2,13 @@
 
 ![](https://raw.githubusercontent.com/kas/percentage/master/percentage.png)
 
-See your battery percentage in the Windows 10 system tray
+This is a fork of https://github.com/kas/percentage .
+
+See your battery percentage in the Windows 10 or Windows 11 system tray
 
 ## Installing
 
-1. [Download the latest release](https://github.com/kas/percentage/releases)
+1. [Download the latest release](https://github.com/jschw/percentage-plus/releases)
 1. Put percentage.exe in your startup folder
    1. To get to your startup folder, press Windows+R, type "shell:startup", then press enter
 
