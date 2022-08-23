@@ -8,8 +8,8 @@ namespace percentage_plus
         [STAThread]
         static void Main()
         {
-            // Application.EnableVisualStyles();
-            // Application.SetCompatibleTextRenderingDefault(false);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
 
             TrayIcon trayIcon = new TrayIcon();
 
