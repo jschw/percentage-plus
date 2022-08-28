@@ -8,17 +8,17 @@ See your battery percentage in the Windows 10 or Windows 11 system tray.
 Compared to the original project, percentage-plus contains the additional features:  
 
   - Updated the project to .NET 6 in order to make it future-proof and correctly work with Windows 11  
-  - Display the remaining time in tray tooltip
+  - Display the remaining time in tray tooltip<br />
   ![](https://raw.githubusercontent.com/jschw/percentage-plus/master/images/tooltip.jpg)  
   - Support for multiple batteries installed (e.g. some Lenovo ThinkPads has this option)  
-  - Added left-click and context menus for tablet users without a pointing device which can hover the icon to display the tooltip 
+  - Added left-click and context menus for tablet users without a pointing device which can hover the icon to display the tooltip<br />
   ![](https://raw.githubusercontent.com/jschw/percentage-plus/master/images/left_click.jpg)
-  Context menu:
+  Context menu:<br />
   ![](https://raw.githubusercontent.com/jschw/percentage-plus/master/images/context.jpg)    
-  - Customizable display options which are stored persistently
+  - Customizable display options which are stored persistently<br />
   ![](https://raw.githubusercontent.com/jschw/percentage-plus/master/images/settings.jpg)  
   - Hotkey support to display the left-click menu at the mouse pointer position
-  - Display detailed information about installed batteries
+  - Display detailed information about installed batteries<br />
   ![](https://raw.githubusercontent.com/jschw/percentage-plus/master/images/battery_infos.jpg)
 
 ## Installation
