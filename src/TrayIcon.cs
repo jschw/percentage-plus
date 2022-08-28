@@ -66,7 +66,8 @@ namespace percentage_plus
         private Bitmap GetTextBitmap(String text, Font font, Color fontColor)
         {
             SizeF imageSize = GetStringImageSize(text, font);
-            Bitmap bitmap = new Bitmap((int)imageSize.Width, (int)imageSize.Height);
+            int iconSize = (imageSize.Width > imageSize.Height) ? (int)imageSize.Width : (int)imageSize.Height;
+            Bitmap bitmap = new Bitmap(iconSize, iconSize);
             using (Graphics graphics = Graphics.FromImage(bitmap))
             {
                 graphics.Clear(Color.FromArgb(0, 0, 0, 0));
@@ -237,7 +238,7 @@ namespace percentage_plus
             if (settingsInterface.settings.tooltipShowRemainingTime) toolTipText += "Time: " + "  " + (isCharging ? "(Charging)" : timeRemainingStr);
 
             // Set Notify icon
-            string notifyIconValue = (isCharging && settingsInterface.settings.showPowerstate) ? avgPercentage.ToString() + "+" : avgPercentage.ToString();
+            string notifyIconValue = (isCharging && settingsInterface.settings.showPowerstate && avgPercentage > 100) ? avgPercentage.ToString() + "+" : avgPercentage.ToString();
             SetNotifyIcon(notifyIconValue, notifyIcon);
 
             // Set tooltip
